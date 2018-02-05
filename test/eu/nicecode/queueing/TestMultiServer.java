@@ -1,6 +1,8 @@
-package it.infn.gssi.queueing;
+package eu.nicecode.queueing;
 
-import it.infn.gssi.simulator.Simulator;
+import eu.nicecode.queueing.MultiServer;
+import eu.nicecode.queueing.Request;
+import eu.nicecode.simulator.Simulator;
 
 public class TestMultiServer extends MultiServer {
 	

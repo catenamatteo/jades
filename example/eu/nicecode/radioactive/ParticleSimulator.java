@@ -1,10 +1,10 @@
-package it.infn.gssi.radioactive;
+package eu.nicecode.radioactive;
 
 import java.util.concurrent.TimeUnit;
 
-import it.infn.gssi.randomness.Random;
-import it.infn.gssi.simulator.Simulator;
-import it.infn.gssi.simulator.Time;
+import eu.nicecode.randomness.Random;
+import eu.nicecode.simulator.Simulator;
+import eu.nicecode.simulator.Time;
 
 public class ParticleSimulator extends Simulator {
 

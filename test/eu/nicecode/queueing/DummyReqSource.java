@@ -1,4 +1,4 @@
-package it.infn.gssi.queueing;
+package eu.nicecode.queueing;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -6,7 +6,8 @@ import java.util.List;
 import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
-import it.infn.gssi.simulator.Time;
+import eu.nicecode.queueing.RequestSource;
+import eu.nicecode.simulator.Time;
 
 public class DummyReqSource extends RequestSource {
 

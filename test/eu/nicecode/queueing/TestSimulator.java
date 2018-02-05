@@ -1,9 +1,9 @@
-package it.infn.gssi.queueing;
-
-import it.infn.gssi.simulator.Simulator;
+package eu.nicecode.queueing;
 
 import org.junit.Assert;
 import org.junit.Test;
+
+import eu.nicecode.simulator.Simulator;
 
 public class TestSimulator extends Simulator {
 

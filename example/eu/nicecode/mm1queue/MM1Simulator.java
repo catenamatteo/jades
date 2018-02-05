@@ -1,10 +1,10 @@
-package it.infn.gssi.mm1queue;
+package eu.nicecode.mm1queue;
 
 import java.util.concurrent.TimeUnit;
 
-import it.infn.gssi.mmnqueue.RequestGenerator;
-import it.infn.gssi.simulator.Simulator;
-import it.infn.gssi.simulator.Time;
+import eu.nicecode.mmnqueue.RequestGenerator;
+import eu.nicecode.simulator.Simulator;
+import eu.nicecode.simulator.Time;
 
 public class MM1Simulator extends Simulator {
 

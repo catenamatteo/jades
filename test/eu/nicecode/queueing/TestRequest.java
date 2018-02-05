@@ -1,6 +1,7 @@
-package it.infn.gssi.queueing;
+package eu.nicecode.queueing;
 
-import it.infn.gssi.simulator.Time;
+import eu.nicecode.queueing.Request;
+import eu.nicecode.simulator.Time;
 
 public class TestRequest extends Request {
 

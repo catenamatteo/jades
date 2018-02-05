@@ -1,8 +1,8 @@
-package it.infn.gssi.mmnqueue;
+package eu.nicecode.mmnqueue;
 
-import it.infn.gssi.queueing.MultiServer;
-import it.infn.gssi.queueing.Request;
-import it.infn.gssi.simulator.Simulator;
+import eu.nicecode.queueing.MultiServer;
+import eu.nicecode.queueing.Request;
+import eu.nicecode.simulator.Simulator;
 
 public class MultiServerWithLog extends MultiServer {
 

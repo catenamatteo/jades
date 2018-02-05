@@ -1,6 +1,6 @@
-package it.infn.gssi.mm1queue;
+package eu.nicecode.mm1queue;
 
-import it.infn.gssi.mmnqueue.MultiServerWithLog;
+import eu.nicecode.mmnqueue.MultiServerWithLog;
 
 public class SingleServerWithLog extends MultiServerWithLog {
 

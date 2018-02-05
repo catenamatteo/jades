@@ -1,8 +1,8 @@
-package it.infn.gssi.beep;
+package eu.nicecode.beep;
 
-import it.infn.gssi.simulator.Event;
-import it.infn.gssi.simulator.Simulator;
-import it.infn.gssi.simulator.Time;
+import eu.nicecode.simulator.Event;
+import eu.nicecode.simulator.Simulator;
+import eu.nicecode.simulator.Time;
 
 public class Beep extends Event {
 

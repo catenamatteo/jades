@@ -1,10 +1,10 @@
-package it.infn.gssi.counter;
+package eu.nicecode.counter;
 
 import java.util.concurrent.TimeUnit;
 
-import it.infn.gssi.simulator.Event;
-import it.infn.gssi.simulator.Simulator;
-import it.infn.gssi.simulator.Time;
+import eu.nicecode.simulator.Event;
+import eu.nicecode.simulator.Simulator;
+import eu.nicecode.simulator.Time;
 
 public class Counter extends Event {
 

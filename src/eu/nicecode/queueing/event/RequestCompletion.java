@@ -1,11 +1,26 @@
-package it.infn.gssi.queueing.event;
+/*
+ * Copyright 2016-2018 Matteo Catena
+ * 
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ * 
+ *     http://www.apache.org/licenses/LICENSE-2.0
+ * 
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+package eu.nicecode.queueing.event;
 
-import it.infn.gssi.queueing.MultiServer;
-import it.infn.gssi.queueing.Request;
-import it.infn.gssi.simulator.Agent;
-import it.infn.gssi.simulator.ComplexEvent;
-import it.infn.gssi.simulator.Simulator;
-import it.infn.gssi.simulator.Time;
+import eu.nicecode.queueing.MultiServer;
+import eu.nicecode.queueing.Request;
+import eu.nicecode.simulator.Agent;
+import eu.nicecode.simulator.ComplexEvent;
+import eu.nicecode.simulator.Simulator;
+import eu.nicecode.simulator.Time;
 
 
 public class RequestCompletion extends ComplexEvent {

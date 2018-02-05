@@ -1,9 +1,9 @@
-package it.infn.gssi.mmnqueue;
+package eu.nicecode.mmnqueue;
 
 import java.util.concurrent.TimeUnit;
 
-import it.infn.gssi.simulator.Simulator;
-import it.infn.gssi.simulator.Time;
+import eu.nicecode.simulator.Simulator;
+import eu.nicecode.simulator.Time;
 
 public class MMNSimulator extends Simulator {
 

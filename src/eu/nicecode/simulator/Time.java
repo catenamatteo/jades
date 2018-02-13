@@ -78,7 +78,7 @@ public class Time implements Comparable<Time>{
 
 	}
 	
-	public Long getTimeMicroseconds() {
+	public long getTimeMicroseconds() {
 		
 		return time;
 	}
@@ -110,7 +110,8 @@ public class Time implements Comparable<Time>{
 	
 	public int compareTo(Time o) {
 		
-		return getTimeMicroseconds().compareTo(o.getTimeMicroseconds()); 
+		
+		return Long.compare(this.time, o.time); 
 	}
 	
 	public String toString() {

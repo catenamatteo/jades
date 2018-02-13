@@ -15,10 +15,12 @@
  */
 package eu.nicecode.simulator;
 
-import java.util.PriorityQueue;
+import java.util.NoSuchElementException;
 import java.util.concurrent.TimeUnit;
 
 import eu.nicecode.simulator.exception.TimeException;
+import it.unimi.dsi.fastutil.PriorityQueue;
+import it.unimi.dsi.fastutil.objects.ObjectHeapPriorityQueue;
 
 public class Simulator {
 
@@ -31,7 +33,7 @@ public class Simulator {
 	public Simulator() {
 		
 		time = new Time(0, TimeUnit.MICROSECONDS);
-		events = new PriorityQueue<Event>();
+		events = new ObjectHeapPriorityQueue<>();
 	}
 	
 	/**
@@ -45,20 +47,28 @@ public class Simulator {
 	
 	public void doAllEvents() {
 		
-		Event e;
-		while ((e = events.poll()) != null) {
+		try  {
 			
-			if (time.compareTo(e.time) <= 0)	{
+			while (true) {
 				
-				time.setTime(e.getTime());
-			
-			} else {
+				Event e = events.dequeue();
 				
-				throw new TimeException("You can't go back in time!");
+				if (time.compareTo(e.getTime()) <= 0)	{
+					
+					time.setTime(e.getTime());
+					
+				} else {
+					
+					throw new TimeException("You can't go back in time!");
+					
+				}
 				
+				e.execute(this);
 			}
 			
-			e.execute(this);
+		} catch (NoSuchElementException nsee)  {
+		
+			//end
 		}
 		
 	}
@@ -66,7 +76,7 @@ public class Simulator {
 	
 	public void schedule(Event e) {
 		
-		events.add(e);
+		events.enqueue(e);
 	}
 	
 	public void remove(Event e) {
